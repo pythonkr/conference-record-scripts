@@ -21,7 +21,7 @@ def list_videos(root_dir):
                     i["date"],
                     i["session_name"].decode("utf8"),
                     i["speaker"].decode("utf8"))
-            img.save(new_cover_path)
+            img.save(new_cover_path, quality=99)
 
 def extract_name(filename):
     f = os.path.basename(filename)
